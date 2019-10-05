@@ -4,8 +4,10 @@
 	run
 	rvenv
 
+SHELL :=/bin/bash
+
 VENV_NAME?=venv
-VENV_ACTIVATE=${VENV_NAME}/bin/activate
+VENV_ACTIVATE=./${VENV_NAME}/bin/activate
 PYTHON=${VENV_NAME}/bin/python3
 
 .DEFAULT: help
@@ -25,7 +27,8 @@ prepare-dev:
 
 # enter virtual environment
 rvenv:
-	source ${VENV_ACTIVATE}
+	source ./venv/bin/activate
+
 
 run: rvenv
 	${PYTHON} main.py

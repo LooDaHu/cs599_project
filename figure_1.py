@@ -5,7 +5,7 @@ from pyecharts import options as opts
 from pyecharts.charts import HeatMap
 from file_reader import file_reader
 
-counties = ['BRA', 'CHI', 'CUB', 'EGY', 'FRA', 'IND', 'ISR', 'USA', 'USS', 'YUG', 'ZAI']
+counties = ['BEL', 'BRA', 'CHI', 'CUB', 'EGY', 'FRA', 'IND', 'ISR', 'USA', 'USS', 'YUG', 'ZAI']
 
 
 def heatmap_base() -> HeatMap:
@@ -14,12 +14,12 @@ def heatmap_base() -> HeatMap:
     #     for j in range(len(value[i])):
     #         print(value[i][j])
     value = file_reader('data_set.txt')
-    print(value)
+    # print(value)
     c = (
         HeatMap()
-            .add_xaxis(counties)
-            .add_yaxis("series0", counties, value)
-            .set_global_opts(
+        .add_xaxis(counties)
+        .add_yaxis("dissimilarity", counties, value)
+        .set_global_opts(
             title_opts=opts.TitleOpts(title="HeatMap-基本示例"),
             visualmap_opts=opts.VisualMapOpts(),
         )
