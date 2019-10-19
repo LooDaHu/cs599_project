@@ -1,2 +1,23 @@
-<h5>K-medoids and MDS</h5>
-<p>Typing “make run” at the command line will re-do all the analyses, and produce the final figure1 and figure2</p>
+## Project 1 K-medoids and MDS
+
+### Purpose
+
+Implement the K-medoids algorithm and MDS in order to redo Hastie, et al. Elements of Statistical Learning, Figure 14.10 
+
+### Project Description PDF
+
+#TODO
+
+### The Figure to generate
+
+![avatar](todo)
+
+Hastie, et al. Elements of Statistical Learning, Figure 14.10
+
+### Steps to reproduce
+
+Necessary software: Python3, Make@Linux
+
+1. Download the project 
+
+2. In the shell, run command "make run", or "bash rvenv.sh" if there is no Make installed in your system.
