@@ -20,4 +20,4 @@ Necessary software: Python3, Make@Linux
 
 1. Download the project 
 
-2. In the shell, run command "make run", or "bash rvenv.sh" if there is no Make installed in your system.
+2. In the Linux shell, run command "make run", or "bash rvenv.sh" if there is no Make installed in your system.
