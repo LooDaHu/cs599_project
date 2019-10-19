@@ -30,6 +30,6 @@ rvenv:
 	source ./venv/bin/activate
 
 
-run: rvenv
-	${PYTHON} main.py
+run:
+	bash rvenv.sh
 
