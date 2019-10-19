@@ -6,11 +6,11 @@ Implement the K-medoids algorithm and MDS in order to redo Hastie, et al. Elemen
 
 ### Project Description PDF
 
-#TODO
+https://github.com/LooDaHu/cs599_project/blob/master/document_files/Project_week1.pdf
 
 ### The Figure to generate
 
-![avatar](todo)
+![avatar](https://github.com/LooDaHu/cs599_project/blob/master/document_files/org_figure.JPG)
 
 Hastie, et al. Elements of Statistical Learning, Figure 14.10
 
