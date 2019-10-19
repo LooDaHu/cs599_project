@@ -1,10 +1,26 @@
 def file_reader(file_path: str):
+    """
+    Read  data from txt file
+
+    Input: file path
+
+    Output: the array of data(float)
+
+    """
     arr = file_reader_raw(file_path)
     res = format_tran(arr)
     return res
 
 
 def file_reader_raw(file_path: str):
+    """
+    Read  data from txt file
+
+    Input: file path
+
+    Output: the array of data(String)
+
+    """
     file = open(file_path, "r")
     list_row = file.readlines()
     arr = []
@@ -16,6 +32,14 @@ def file_reader_raw(file_path: str):
 
 
 def file_reader_matrix(file_path: str):
+    """
+    Read  data from txt file
+
+    Input: file path
+
+    Output: the array of data(matrix format)
+
+    """
     arr = file_reader_raw(file_path)
     for i in range(len(arr)):
         for j in range(len(arr[i])):
@@ -24,6 +48,14 @@ def file_reader_matrix(file_path: str):
 
 
 def format_tran(source_list):
+    """
+      Change the type of every element in the array
+
+      Input: source array
+
+      Output: processed array
+
+      """
     res = []
     for i in range(len(source_list)):
         for j in range(len(source_list[i])):
